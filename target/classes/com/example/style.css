@@ -1,0 +1,87 @@
+.root {
+  -fx-background-color: #ffffff;
+  -fx-font-family: "Segoe UI", sans-serif;
+  -fx-text-fill: #ffffff;
+}
+
+.title {
+  -fx-font-size: 20px;
+  -fx-font-weight: bold;
+  -fx-text-fill: #083678;
+}
+
+.table-view {
+  -fx-background-color: #ffffff;
+  -fx-table-cell-border-color: #dddddd;
+  -fx-control-inner-background: #ffffff;
+  -fx-border-color: transparent;
+}
+
+.table-view .column-header-background {
+  -fx-background-color: #083678;
+}
+
+.table-view .column-header,
+.table-view .filler {
+  -fx-size: 28px;
+  -fx-border-color: #083678;
+  -fx-border-width: 0 0 1 0;
+}
+
+.table-row-cell {
+  -fx-background-color: #ffffff;
+  -fx-text-fill: #083678;
+}
+
+.table-row-cell:filled:selected,
+.table-row-cell:focused:selected {
+  -fx-background-color: #d3e4f5;
+  -fx-text-fill: #083678;
+}
+
+.button {
+  -fx-background-color: #083678;
+  -fx-text-fill: #ffffff;
+  -fx-background-radius: 5px;
+  -fx-cursor: hand;
+}
+
+.clear {
+  -fx-background-color: #c62828;
+  -fx-text-fill: #ffffff;
+  -fx-background-radius: 5px;
+}
+
+.combo-box {
+  -fx-background-color: #ffffff;
+  -fx-border-color: #083678;
+  -fx-border-radius: 5px;
+  -fx-background-radius: 5px;
+  -fx-font-size: 12px;
+  -fx-text-fill: #083678;
+}
+
+.combo-box:hover {
+  -fx-border-color: #0b4ea8;
+}
+
+.combo-box .arrow-button {
+  -fx-background-color: transparent;
+}
+
+.combo-box .arrow {
+  -fx-background-color: #083678;
+}
+
+.text-field {
+  -fx-background-color: #ffffff;
+  -fx-border-color: #083678;
+  -fx-border-radius: 5px;
+  -fx-background-radius: 5px;
+  -fx-text-fill: #083678;
+  -fx-prompt-text-fill: #999;
+}
+
+.label {
+  -fx-text-fill: #083678;
+}

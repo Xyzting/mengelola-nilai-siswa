@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox spacing="10" alignment="TOP_CENTER" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.AppController">
+    <padding><Insets top="10" right="10" bottom="10" left="10"/></padding>
+    <Label text="Daftar Siswa" styleClass="title"/>
+    <HBox spacing="10">
+      <padding><Insets top="20"/></padding>
+      <TextField fx:id="searchField" promptText="Cari Nama" />
+      <Button text="Search" onAction="#onSearch" />
+      <Button fx:id="clearSearchButton" onAction="#onClearSearch" text="Clear Search" styleClass="clear"/>
+      <Region fx:id="spacer" HBox.hgrow="ALWAYS" />
+      <ComboBox fx:id="sortCriteriaCombo" promptText="Sort by" styleClass="combo-box"/>
+      <Button text="Create Student" onAction="#onAdd" />
+    </HBox>
+    <TableView fx:id="table" prefWidth="600">
+        <columns>
+            <TableColumn fx:id="nameCol" text="Nama" />
+            <TableColumn fx:id="nimCol" text="NIM" />
+            <TableColumn fx:id="n1Col" text="Nilai 1" />
+            <TableColumn fx:id="n2Col" text="Nilai 2" />
+            <TableColumn fx:id="n3Col" text="Nilai 3" />
+            <TableColumn fx:id="avgCol" text="Rata-rata" />
+        </columns>
+    </TableView>
+    <Label fx:id="infoLabel" />
+</VBox>
