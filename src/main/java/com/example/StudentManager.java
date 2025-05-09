@@ -13,9 +13,8 @@ public class StudentManager {
     private List<Student> students = new ArrayList<>();
 
     public void loadFromFile(String filename) throws IOException {
-        String pathfile = "latihan_uts/" + filename;
         students.clear();
-        try (BufferedReader reader = new BufferedReader(new FileReader(pathfile))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] parts = line.split(",");
@@ -30,8 +29,7 @@ public class StudentManager {
     }
 
     public void saveToFile(String filename) throws IOException {
-      String pathfile = "latihan_uts/" + filename;
-      try (BufferedWriter writer = new BufferedWriter(new FileWriter(pathfile, true))) {
+      try (BufferedWriter writer = new BufferedWriter(new FileWriter(filename))) {
         for (Student s : students) {
             writer.write(s.toString());
             writer.newLine();
