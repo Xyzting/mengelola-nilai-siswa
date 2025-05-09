@@ -13,20 +13,6 @@ Aplikasi desktop sederhana berbasis JavaFX untuk mengelola data dan nilai akhir 
 - ✅ Validasi input dan feedback kesalahan secara interaktif
 - ✅ GUI interaktif menggunakan FXML + JavaFX
 
-## 🧱 Struktur Proyek
-
-src/
-│
-├── application/
-│ ├── App.java → Entry point aplikasi
-│ ├── Student.java → Class model siswa (OOP)
-│ ├── StudentManager.java → Handler data (load, save, sort, search, etc.)
-│ ├── AppController.java → Controller utama JavaFX
-│ └── style.css → styling fxml
-│
-├── resources/
-│ ├── layout.fxml → Layout utama aplikasi (FXML)
-
 ## 🛠️ Teknologi
 
 - Java 11 atau lebih tinggi
