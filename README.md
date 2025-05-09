@@ -24,7 +24,7 @@ Aplikasi desktop sederhana berbasis JavaFX untuk mengelola data dan nilai akhir 
 
 1. Clone repositori ini:
 
-   git clone https://github.com/username/nilai-siswa-javafx.git
+   git clone https://github.com/Xyzting/mengelola-nilai-siswa.git
    cd nilai-siswa-javafx
 
 2. Buka dengan IDE yang support JavaFX (seperti IntelliJ IDEA atau Eclipse)
